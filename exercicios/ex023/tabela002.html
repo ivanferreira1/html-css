@@ -19,6 +19,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -29,6 +30,20 @@
         thead, tfoot {
             background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(even) { /* 2n-1 */
+            background-color: darkcyan;
+            font-weight: bold;
         }
 
         td.num {
@@ -174,5 +189,9 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in libero explicabo velit ut aspernatur ea eius totam, fugit consequatur suscipit laudantium facilis error numquam illo nostrum iste aliquid rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam incidunt consequatur et provident in eveniet vero est fugiat ut aut voluptatum, cumque molestias quas repudiandae voluptatem mollitia eos consequuntur? Atque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sequi dolorem sed reiciendis ad soluta corporis velit maiores! Quasi ipsa numquam doloremque, beatae nulla unde illum dolorem saepe molestiae. Molestiae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in libero explicabo velit ut aspernatur ea eius totam, fugit consequatur suscipit laudantium facilis error numquam illo nostrum iste aliquid rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam incidunt consequatur et provident in eveniet vero est fugiat ut aut voluptatum, cumque molestias quas repudiandae voluptatem mollitia eos consequuntur? Atque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sequi dolorem sed reiciendis ad soluta corporis velit maiores! Quasi ipsa numquam doloremque, beatae nulla unde illum dolorem saepe molestiae. Molestiae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in libero explicabo velit ut aspernatur ea eius totam, fugit consequatur suscipit laudantium facilis error numquam illo nostrum iste aliquid rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam incidunt consequatur et provident in eveniet vero est fugiat ut aut voluptatum, cumque molestias quas repudiandae voluptatem mollitia eos consequuntur? Atque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sequi dolorem sed reiciendis ad soluta corporis velit maiores! Quasi ipsa numquam doloremque, beatae nulla unde illum dolorem saepe molestiae. Molestiae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in libero explicabo velit ut aspernatur ea eius totam, fugit consequatur suscipit laudantium facilis error numquam illo nostrum iste aliquid rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam incidunt consequatur et provident in eveniet vero est fugiat ut aut voluptatum, cumque molestias quas repudiandae voluptatem mollitia eos consequuntur? Atque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sequi dolorem sed reiciendis ad soluta corporis velit maiores! Quasi ipsa numquam doloremque, beatae nulla unde illum dolorem saepe molestiae. Molestiae.</p>
 </body>
 </html>
