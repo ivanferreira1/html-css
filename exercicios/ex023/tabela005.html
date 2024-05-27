@@ -24,10 +24,31 @@
             padding: 8px;
             text-align: center;
         }
+
+        col.cnome {
+            background-color: chartreuse;
+        }
+
+        col.cgrupo {
+            background-color: yellow;
+        }
+
+        col.cprof {
+            background-color:cyan;
+        }
     </style>
 </head>
 <body>
     <table>
+        <colgroup>
+            <col class="cnome">         
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+            
+                <!--<col class="cnome">                       <col class="csexo">
+               <col class="cidade">
+                <col class="cprof">-->
+        </colgroup>
         <caption>Cadrastro</caption>
         <tr>
             <th scope="col">Nome</th>
